@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+:root {
+    --selago: #fffeff;
+    --white-lilac: #f1eff2;
+    --puerto-rico: #4daba0;
+    --mindaro: #ccdd76;
+    --heather: #b1b3b5;
+    --light-sea-green: #2cb3af;
+    --light-cyan: #e4fbf8;
+    --las-palmas: #bedf32;
+    --rice-flower: #f8ffd6;
+    --viking: #4bbcbf;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Karla', sans-serif;
+}
+
+.price-grid {
+  background: var(--white-lilac);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: var(--selago);
+  box-shadow: 0 0px 6px 6px rgba(0,0,0,0.05);
+  display: grid;
+  grid-template-columns: 350px 350px;
+  grid-template-rows: 220px 275px;
+  border-radius: 10px;
+}
+
+.page-grid {
+  width: 550px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row: 1;
+  margin-left: 50px;
+  padding-top: 20px;
+}
+
+.title {
+  color: var(--puerto-rico);
+}
+
+.description {
+  color: var(--mindaro);
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  font-size: 17px;
+}
+
+.subdescription {
+  color: var(--heather);
+  font-size: 16px;
+  letter-spacing: 0.2px;
+}
+
+.sub-description {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row: 2;
+  background-color: var(--light-sea-green);
+  color: var(--light-cyan);
+  box-shadow: -6px 0px 6px 6px rgba(0,0,0,0.02);
+  padding-top: 20px;
+  border-radius: 0px 0px 0px 10px;
+}
+
+.sub-description-title {
+  margin-left: 50px;
+  font-size: 24px;
+}
+
+.price {
+  font-size: 36px;
+  margin-left: 50px;
+  margin-top: -1px;
+}
+
+#span {
+  font-size: 16px;
+  margin-top: 14px;
+  margin-left: 10px;
+  position: absolute;
+  opacity: 0.6;
+  letter-spacing: 0.5px;
+}
+
+.price-description {
+  margin-left: 50px;
+  margin-top: -28px;
+}
+
+button {
+  width: 245px;
+  height: 60px;
+  margin-top: 15px;
+  margin-left: 50px;
+  border: 0;
+  border-radius: 5px;
+  background-color: var(--las-palmas);
+  color: var(--rice-flower);
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  box-shadow: 0 0px 6px 6px rgba(0,0,0,0.05);
+}
+
+button:active {
+  color: var(--las-palmas);
+  background-color: var(--white-lilac);
+  box-shadow: 0 0px 6px 6px rgba(0,0,0,0.05);
+}
+
+.about {
+  background-color: var(--viking);
+  color: var(--light-cyan);
+  border-radius: 0px 0px 10px 0px;
+  box-shadow: 6px 6px 8px 4px rgba(0,0,0,0.05);
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row: 2;
+}
+
+.about-title {
+  margin-left: 50px;
+  padding-top: 20px;
+  font-size: 24px;
+}
+
+.about-description {
+  margin-left: 50px;
+  margin-top: 22px;
+  width: 210px;
+  line-height: 22px;
+  opacity: 0.8;
+}
